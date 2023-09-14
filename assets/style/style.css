@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); ///font importada do google
+
+* {
+    margin: 0;
+    padding:0;
+    font-family: 'Open Sans' sans-serif;
+}
+
+
+body{
+   
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+display: flex;
+height: 100vh;
+background-size: cover; /* ajusta a imagem para cobrir todo o body */
+background-repeat: no-repeat; /* impede a repetição da imagem */
+
+}
+
+.data {
+   align-items: center;
+    display: flex;
+    justify-content: space-around; 
+    height: 125px;
+    width: 500px;
+    background-color: rgba(179, 181, 182, 0.322);
+    border-radius: 5px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.274);
+    margin-bottom: 10px;
+
+
+}
+
+.data div {
+    height: 100px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #180202;
+    background: #164b801a; /* Cor substituída */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.438) ;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style:preserve-3d ;
+
+}
+
+.data div:hover {
+    transform: perspective(200px) rotateY(10deg); /* Aplica perspectiva e gira o elemento 3D ao passar o mouse */
+}
+
+.data span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    height: 200px;
+    width: 500px;
+    background-color: rgba(179, 181, 182, 0.322);
+    border-radius: 5px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.336);
+    transition: all 0.10s ease-in-out;
+
+}
+
+
+.relogio div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #180202;
+    background: #164b801a; /* Cor substituída */
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7) ;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+
+
+.relogio div:hover {
+    transform: perspective(200px) rotateY(10deg); /* Aplica perspectiva e gira o elemento 3D ao passar o mouse */
+}
+
+
+.relogio span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.relogio span.tempo{
+    font-size: 25px;
+}
